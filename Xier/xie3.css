@@ -1,0 +1,33 @@
+main .div1 .nav1 ul:nth-child(3){
+	background: #d0d0d0;
+	border-left: 4px solid #006ba1;
+}
+.div2 .xier3 p{
+	font-family:UKIJ EsN;
+}
+.div2>div>h4,.div2>div>h2{
+	font-family:ALKATIP Kitab Tom;
+	text-align: center;
+}
+.div2 div section{
+	margin: 0 40px;
+}
+.div2>div>img{
+	position: relative;
+	border-radius: 20px;
+	height: 250px;
+	width: 350px;
+}
+.div1>figure>img{
+	display: block;
+	width: 300px;
+	height: 540px;
+}
+.div2>div>button{
+	display: none;
+	width: 50px;
+	height: 250px;
+}
+.nav2>a:hover{
+	color: #fff;
+}

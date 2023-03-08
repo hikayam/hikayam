@@ -1,0 +1,59 @@
+footer{
+	font-family:ALKATIP Kitab Tom;
+	display: block;
+	height: 450px;
+	background: linear-gradient(to top,#006ba1,#007bb9);
+}
+footer .footer-div{
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+}
+.footer-div1 ul{
+	display:block;
+	padding-top: 30px;
+	color: #ffffff;
+	font-family:UKIJ3D;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	width: 200px;
+}
+.footer-div1{
+	display: inline-block;
+}
+footer>div>div img{
+	width: 200px;
+}
+.footer-div2{
+	margin: 30px;
+	float: right;
+	width: 150px;
+	display: block;
+}
+.footer-div2 p{
+	display: block;
+	font-family:Es T ;
+	line-height: 30px;
+}
+
+.footer-div3{
+	position: relative;
+	text-align: center;
+	width: 700px;
+}
+.footer-div3>img{
+	
+	width: 500px;
+	height: 400px;
+}
+.footer-div3 p{
+	font-size: 25px;
+	color: #fff;
+	right: 45%;
+	top: 80%;
+	position: absolute;
+}
+ul{
+	list-style-type: none;
+}

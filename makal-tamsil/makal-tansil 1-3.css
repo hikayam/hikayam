@@ -1,0 +1,29 @@
+main .div1 .nav1 ul:nth-child(3){
+	background: #d0d0d0;
+	border-right: 4px solid #006ba1;
+}
+.div2 .xier0 p{
+	font-size: 30px;
+	/* font-family:UKIJ DiY; */
+}
+main{
+	/* font-family:ALKATIP Tor Tom ; */
+}
+main .div2 h3{
+	text-shadow: 4px 3px 5px #fcfcfc ,-4px -3px 5px #fcfcfc ;
+	width: 180px;
+	border-bottom: 3px solid #ffff00;
+	padding-left: 20px;
+	display: inline-block;
+}
+main .div2 p:nth-child(odd){
+	width: 400px;
+	margin-right: 5px;
+	float: right;
+	font-family: UKIJKu;
+}
+main .div2 p:nth-child(even){
+	font-family:UKIJKuY;
+	margin-top: 20px;
+	color: #ffff;
+}

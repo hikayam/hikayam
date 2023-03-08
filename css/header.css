@@ -1,0 +1,69 @@
+header{
+	background:linear-gradient(to top,#fff,#006ba1,#006ba1);
+}
+#header{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	height: 400px;
+	/* background: linear-gradient(to top,#fff,#3f1dfd,#3f1dfd); */
+}
+.header-div1{
+	display: inline-block;
+	
+}
+#header>.header-div1>figure>img:first-child{
+	position: absolute;
+	display: block;
+	width: 300px;
+	float: left;
+	margin-top: 90px;
+	margin-left: 20px;
+}
+#header>.header-div1>figure>img:nth-child(2){
+	margin-top: 60px;
+	width: 700px;
+	float: left;
+	margin-left: 20px;
+}
+#header>.header-div1>figure>img:last-child{
+	
+}
+#header>.header-div1>figure{
+	display: inline-block;
+	
+}
+.header-div2>input:first-child{
+	margin-top: 20px;
+	height: 40px; 
+	border-radius: 10px 0 0 10px;
+	width: 250px;
+	padding-right:10px;
+	text-align:right;
+	font-size: 17px;
+	margin-left: 550px;
+	border-bottom: 2px solid #000000;
+	border-top: 2px solid #000000;
+	border-right: 1px solid #000000;
+}
+.header-div2>.inpu2{
+	margin-top: 20px;
+	font-size: 25px;
+	height:44px;
+	width: 80px;
+	border-radius: 0 10px  10px 0;
+	border-bottom: 2px solid #000000;
+	border-top: 2px solid #000000;
+	border-right: 2px solid #000000;
+	border-left:1px solid #000000;
+	position: absolute;
+	background: #c60310;
+	
+}
+.img1{
+	width: 40px;
+	position: absolute;
+	right: 610px;
+	top: 250px;
+}
+

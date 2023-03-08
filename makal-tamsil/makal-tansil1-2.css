@@ -1,0 +1,13 @@
+.div2>div>section{
+	margin-top: 20px;
+	/* border: 1px solid #fff; */
+	width: 395px;
+	
+}
+.div2>div>section{
+	line-height: 50px;
+	margin-right: 5px;
+}
+.div2>div>section p:nth-child(odd){
+	color: aliceblue;
+}

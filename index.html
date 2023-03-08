@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/home pag.css">
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/nav.css">
+		<link rel="stylesheet" href="./css/mian.css">
+		<link rel="stylesheet" href="./css/foter.css">
+		<link rel="stylesheet" href="./ziti.css">
+		<link rel="stylesheet" href="./css/centant.css">
+		<link rel="stylesheet" href="./window/window.css">
+		<script src="jquery.js"></script>
+		<title>ھېكايەم</title>
+	</head>
+	<body>
+		<script>
+			// 获取元素
+			var spanr = document.getElementById('header')
+			// 蓝听浏览器宽度
+			windowon.onresize = function(){
+				if(window.outerWidth <=1300){
+					for (var i = 0;i< spanr.length;i++){
+						spanr[i].style.width =450
+					}
+					spanr[1].style.backgroundColor = '#3123ff'
+				}else{
+					for(var j = 0;j<spanr.length;j++){
+						spanr.style.width = 450
+					}
+				}
+			}
+		</script>
+		<div>
+			<!-- <div id="xinwen" >
+				<p>خەۋەر</p>
+				<img src="./img/kanjian.png" alt="" >
+			</div> -->
+		</div>
+		<header>
+			<div id="header">
+				<div class="header-div1 pull-left">
+					<figure>
+						<img src="./img/未标题-2.png" alt="">
+						<img src="./img/salungakalgingizni.png" alt="">
+						<img src="./img/hekaytam2.png" alt="">
+					</figure>
+				</div>
+				<div class="header-div2">
+					<input id="input1" type="text" placeholder="ئىزدىمەكچى بولغان خەتنى كىرگۇزۇڭ">
+					<input class="inpu2" type="submit" value="ئىزدەش">
+					<img id="img2" class="img1" src="./img/shanchu1.gif" style="display: none;">
+				</div>
+			
+				
+			</div>
+		</header>
+		<nav>
+			<div id="var-div">
+				<ul>
+					<li id="box1" class="bax"> باش بەت
+					<span class="li-xala">
+						<p><a href="http://uygur.xinjiang.gov.cn/">خەلق تورى</a></p>
+						<p><a href="https://www.alkuyi.com/">ئەل كۈي تورى</a></p>
+						<p><a href="https://www.nur.cn">نۇر تورى</a></p>
+					</span>
+					</li>
+					<a href="./Xier/xier1.html"><li>شىېئر</li></a>
+					<a href="./hekmat/hekmat.html"><li>ھېكىمەت</li></a>
+					<a href="./makal-tamsil/makaltansil1.html"><li>ماقال-تەمسىل</li></a>
+					<a href="./Eibrat/Eibrat.html"><li>ئىبرەت</li></a>
+					<a href="./Roman/Roman.html"><li>ئەسەر</li></a>
+					<a href="./Quqak/queqak1.html"><li>چۆچەك</li></a>
+					
+				</ul>
+				<div style=" position: fixed; top: 30%; left: 95%; ">
+					<img class="img-ding" src="./Eibrat/dingbu2.gif" alt=""style="display: none;">
+				</div>
+				<!-- <div id="xinwen" style="text-align: center;" >
+					<p>خەۋەر</p><br>
+					<a href="javascript:;" id="passs"><img id="img-y" class="img-y" src="./img/kanjian.png" alt="" style=" border-radius: 20px; width: 40px;" ></a>
+				</div> -->
+			</div>
+		</nav>
+		<script>
+			
+		</script>
+		<script>
+			$(function(){
+				$(window).scroll(function(){
+					// var scrollTop = $(document).scrollTop();
+					// if (scrollTop >= 130&&scrollTop<= 800) {
+					// 	$("#xinwen").hide();
+					// 	$('.img-y').hide()
+					// 	$('.img-ding').hide()
+					// } else {
+					// 	$("#xinwen").show();
+					// 	$('.img-y').show();
+						
+					// }
+					var scrollTop = $(document).scrollTop();
+					if (scrollTop<= 800) {
+						
+						$('.img-ding').hide()
+					}else{
+						$('.img-ding').show()
+					}
+				})
+				$('.img-ding').click(function(){
+					$('html,body').animate({
+						scrollTop:0
+					},700)
+				})
+			});
+		</script>
+		
+		<div>
+			<!-- <script>
+				$(function(){
+					$('#win-left').load('./window/window.html .right')
+					$('#win-right').load('./window/window.html .left')
+				})
+			</script>
+			
+			<div id="window" style="display: block;">
+				<div id="win-left" class="win-left pull-left" ></div>
+				<div id="win-right" class="win-right pull-right"></div>
+			</div>
+			<script>
+				addEventListener('load',function(ev){
+					var eyt = document.getElementById('passs');
+					var win = document.getElementById('window');
+					// var i = true
+					eyt.addEventListener('click',function(){
+						var display = win.style.display
+						 if(display==='block'){
+							 win.style.display = 'none'
+						 }else{
+							 win.style.display = 'block'
+						 }
+						 var imgy = document.getElementById('img-y');
+						 if(display==='block'){
+							 imgy.src = "./img/bishan.png"
+						 }else{
+							 imgy.src = "./img/kanjian.png"
+						 }
+					})
+					
+				})
+			</script> -->
+			<div class="nav-img">
+				<img src="./img/haibao.jpg" alt="">
+			</div>
+		</div>
+		<main>
+			<div class="shan" id="container" style="display:block;">
+				<div class="main-div1 pull-right">
+					<section class="sect0">
+						<p class="">رومان</p>
+					</section>
+					<section class="sect1">
+						<figure>
+							<img src="./img/LOGO.gif" alt="">
+						</figure>
+						<p>كىتاب ئوقۇغان كىشىنىڭ مېڭە ھۈجەيرىلىرى ۋە نىرىفلىرى غىدىقلىنىپ، زېھنى ئۆتكۈرلىشىدۇ </p>
+						<span><a href="./Roman/Roman.html"> &lt;&lt;&lt;&lt;</a></span>
+						<p>2022-10-15</p>
+					</section>
+					<section class="sect2" style="text-align: center;">
+						<ul>
+							<li class="">
+								<a href="./Roman/Roman.html">ئاشنىدارچىلىق نابۇت قىلغان بەخىتسىز بوۋاق</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="./Roman/Roman - 副本 (2).html"> تىرىك كۆمېۋىتىلگەن بوۋاق</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="./Roman/Roman - 副本 (3).html">بىچارە قىز</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="./Roman/Roman - 副本 (4).html">ۋاپادار كېلىن ھازازۇل قېينىئانا</a>
+								<span></span>
+							</li>
+							<li class="">
+								<a class="" href="./Roman/Roman - 副本 (5).html">شاھزادە سەمەندەر ۋە بېشەكشېرىن</a>
+								<span></span>
+							</li>
+							<!-- <li>
+								<a href="./Roman/Roman - 副本 (2).html">ھەسرەتلىك تىنىقلار</a>
+								<span></span>
+							</li> -->
+							<li>
+								<a href="./Roman/Roman - 副本 (6).html">سەرسان كۆڭۈللەر</a>
+								<span></span>
+							</li>
+							
+							
+							
+							
+							<li>
+								<a href=""></a>
+								<span></span>
+							</li>
+							<li>
+							
+								<span></span>
+							</li>
+							<li>
+								<a href=""></a>
+								<span></span>
+							</li>
+							<li>
+								<a href=""></a>
+								<span></span>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="main-div2 pull-right">
+					<section class="sect1-span">
+						<p class="">ماقال-تەمسىل</p>
+						<span><a href="./makal-tamsil/makaltansil1.html">&lt;&lt;&lt;تېخىمۇكۇپ</a></span>
+					<section class="sect2" style="text-align: center;">
+						<ul>
+							<li class="">
+								<a href="./makal-tamsil/makal-tamsil3.html">ئۇنداق قازانغا مۇنداق چۈمۈچ</a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal-tamsil1-8.html">يامغۇر بىلەن يەر</a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal-tamsil1-7.html">جان بولسا جاھان، ئاش بولسا قازان</a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal- tamsil4.html">جىنىڭ قەستى شاپتۇلدا</a>
+							</li>
+							<li >
+								<a>غوجامنىڭ غوجىسى بار، چامغۇ-زىدەكنىڭ ئۇۋىسى</a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal-tamsil1-6.html">بىلىم ئالمىغان ياش، تام تۈۋدىكى تاش</a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal-tamsil1-8.html">كىتاپ ئەقىل بۇلىقى </a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal-tamsil1-8.html">بىلىملىك ئۇزار بىلىمسىز تۇزار </a>
+							</li>
+							<li>
+								<a >ۋاقىت ئالتۇندىن قىممەت </a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makaltansil1.html">قاغا بالام ئاپئاق </a>
+							</li>
+							
+							<li>
+								<a href="./makal-tamsil/makaltansil1.html"> پىيازنىڭ كۆيگىنى كۆيگەن </a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal- tamsil2.html">مۇزاينىڭ يۇگرىشى سامانلىققىچە </a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal-tamsil3.html">ئارمانغا چۇشلۇق دەرمان يوق</a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal- tamsil4.html">كېڭەشلىك ئىش بۇزۇلماس</a>
+							</li>
+							<li>
+								<a href="./makal-tamsil/makal-tamsil5.html"> ئەل يىغىلسا باغ بۇلۇر</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="main-div3 pull-right">
+					<section class="sect3">
+						<p>ئېگىلمىسۇن داداڭنىڭ بېشى ، تۆكۈلمىسۇن ئاناڭنىڭ يېشى</p>
+						<span class="pull-left"><a href="./hekmat/hekmat.html">&lt;&lt;تېخىمۇكۇپ</a></span>
+					</section>
+					<div id="app">
+						<div id="sum">1</div>
+						<img src="./img/1.jpg" alt="" id="img1">
+						<button id="prev" onclick="onPrve()" value="">&gt;</button>
+						<button id="next" onclick="onNext()" value="">&lt;</button>
+					</div>
+					<section class="sect5">
+						<img src="./img/hat1.png" alt="">
+						<img src="./img/hat2.png" alt="">
+						<img src="./img/hat3.png" alt="">
+						<img src="./img/hat4.png" alt="">
+						<img src="./img/hat5.png" alt="">
+					</section>
+				</div>
+				
+					<script>
+						var lis = document.querySelectorAll('li')
+						for (var i= 0 ;i<lis.length;i++){
+							lis[i].onmouseover = function(){
+								this.children[0].className= 'cuo'
+								this.children[1].style.display = 'block'
+							}
+							lis[i].onmouseout = function(){
+								this.children[0].className= ''
+								this.children[1].style.display = 'none'
+							}
+						}
+					</script>
+			</div>
+			
+			</div>
+		</main>
+		
+		<footer>
+			<div class="footer-div">
+				<div class="footer-div1">
+					<ul>
+						<li>نەسىيەت</li>
+						<li>شىېئر</li>
+						<li>ماقالە</li>
+						<li>رومان</li>
+						<li>نەسىر</li>
+						<li>ماقال-تەمسىل</li>
+						<li>ھېكىمەت</li>
+					</ul>
+				</div>
+				<div class="footer-div2">
+						<img src="./img/gonggonghao erweima.jpg" alt="">
+						<p>بۇكورتنى سىكاندىرلاپ بىزنىڭ سالۇنىمىزنى قۇشىۋېلىڭ</p>
+						
+					</div>
+					<div class="footer-div3 pull-right">
+						<img src="./img/未标题-2.png" alt="">
+						<p >邮箱：2568233710@qq.com<br />1ro_7chm3t06uu@dingtalk.com</p>
+						
+					</div>
+				</div>
+		</footer>
+	
+		
+		<script>
+			var main = document.getElementById('container')
+				main.onselectstart=function(){
+					return false
+				}
+		</script>
+		<script src="./js/mian-js.js"></script>
+	</body>
+</html>

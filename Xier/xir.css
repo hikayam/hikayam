@@ -1,0 +1,22 @@
+
+.libai1 img{
+	border-radius: 10px ;
+	padding-top: 30px;
+	padding-right: 30px;
+	width: 457px;
+}
+.div2{
+	position: relative;
+}
+.libai>img{
+
+	width: 250px;
+	border-radius: 20px 20px 0 0;
+	right: 200px;
+	top: 560px;
+	position: absolute;
+	/* display: block; */
+}
+.nav2>a:hover{
+	color: #fff;
+}

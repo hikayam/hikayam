@@ -1,0 +1,76 @@
+<div id="right-1" class="right" >
+	<style>
+		.box{
+			margin: 0 auto;
+			padding: 0;
+			width: 500px;
+		}
+		ul{
+			border-radius: 10px;
+			padding: 0;
+			margin: 0;
+			background-color:#b8b8b8;
+			border-bottom: 1px solid #ff0000;
+			text-align: center;
+		}
+		li{
+			list-style-type: none;
+			padding: 0;
+			display: inline-block;
+			padding: 10px 25px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+		.cou{
+			background-color: red;
+		}
+		.shan{
+			display: none;
+		}
+		.shang{
+			
+			/* color: aqua; */
+		}
+	</style>
+	<!-- <script src="./js/mian-js.js"></script> -->
+	<div class="box">
+		<ul>
+			<li id="bo" class="cou">商品介绍</li>
+			<li id="bo" class="shang">规格与包装</li>
+			<li id="bo">售后保障</li>
+			<li id="bo">商品评价</li>
+		</ul>
+		<div>
+			<div class="shan" style="display: block;">商品介绍1245</div>
+			<div class="shan">规格与包453</div>
+			<div class="shan">售后保障4254</div>
+			<div class="shan">商品评价5463</div>
+		</div>
+	</div>
+	<script>
+		// var li = document.getElementById('box1')
+		var shan = document.getElementsByClassName('shan')
+		for (var i= 0;i<bo.length;i++){
+			bo[i].setAttribute('indexkey',i)
+			bo[i].onclick = function(){
+			var index = this.getAttribute('indexkey')
+				for (var j= 0; j<bo.length;j++){
+					bo[j].className= ''
+				}
+				this.className = 'cou,shang'
+				for(var y = 0;y<shan.length;y++){
+					shan[y].style.display = 'none'
+					
+				}
+				shan[index].style.display = 'block'
+			}
+		}
+	</script>
+</div>
+<div id="left-1" class="left" style="">
+	<!-- <div>hfgdhhjftghj</div>
+	<div>hfgdhhjftghj</div>
+	<div>hfgdhhjftghj</div>
+	<div>hfgdhhjftghj</div>
+	<div>hfgdhhjftghj</div> -->
+</div>
