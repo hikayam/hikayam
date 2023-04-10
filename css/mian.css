@@ -2,13 +2,15 @@ footer{
 	height: 450px;
 }
 main{
+	font-family: ALKATIP Basma Tom;
 	margin: 0 auto;
 	width: 1200px;
-	height: 1200px;
+	height: 900px;
 }
 main #container{
+	background: antiquewhite;/*背景颜色*/
 	font-family: Es T;
-	width: 1235px;
+	width: 670px;
 	margin: 0 auto;
 	/* height:815px; */
 }
@@ -16,35 +18,28 @@ main #container{
 	font-size: 30px;
 	color: #2718ff;
 	line-height: 40px;
-	border-radius: 10px;
 	text-align: center;
-	height: 40px;
+	line-height: 50px;
 	background-color: #fff152;
 	width: 400px;
 }
 .main-div1{
-	font-family:UKIJNsq;
-	padding: 5px;
-	border: 2px solid #ff0000;
 	width: 400px;
 }
-.main-div1 .sect1>figure>img{
-	width: 250px;
-	float: right;
-	border-radius: 120px;
-	box-shadow: -2px 4px 8px #000000;
-}
-.main-div1 .sect1 p{
-	line-height: 40px;
-	font-size: 20px;
+.sect2 ul li span{
+	padding-top: 17px;
+	width: 10px ;
+	height: 10px;
+	display: inline-block;
+	/* text-align: right; */
+	/* list-style-type: circle; */
+	background: url(../img/icon3.png) no-repeat;
+	transform: rotate(180deg);
+	line-height: 45px;
+	/* vertical-align: top; */
 }
 .main-div1 .sect2{
 	width: 400px;
-}
-section ul{
-	/* float: right; */
-	list-style-type: none;
-	/* list-style-image: url(../img/icon3.png); */
 }
 .main-div1 .sect2>ul li a{
 	line-height: 45px;
@@ -58,17 +53,18 @@ section ul{
 	vertical-align: top;
 }
 .main-div1 .sect2>ul>li a:hover{
-	transition: margin-left 0.2s;
+	color: red;
+	transition: margin-left 0.1s;
 }
 #container .main-div1 .sect2 ul a:hover{
-	margin-left: 7px;
+	margin-left: 10px;
+}
+.main-div1, .main-div2{
+	height: 450px;
 }
 .main-div2{
-	font-family: UKIJMejT;
-	/* height: 810px; */
-	margin-right: 10px;
-	border: 2px solid #006ba1;
-	width:250px ;
+	/* font-family: UKIJMejT; */
+	width:270px ;
 }
 .main-div2 .sect1-span{
 	background:#006ba1;
@@ -84,9 +80,6 @@ section ul{
 	width: 200px;
 	border-radius: 150px;
 }
-.main-div2 .sect2>ul{
-	margin: 5px;
-}
 .main-div2 .sect2>ul li a{
 	overflow: hidden;
 	white-space: nowrap;
@@ -97,9 +90,6 @@ section ul{
 	line-height: 40px;
 	display: inline-block;
 }
-.main-div2>section>span>a{
-	font-family: ALKATIP Basma Tom;
-}
 .main-div2 .sect2{
 	font-family: UKIJ TuT;
 }
@@ -108,22 +98,55 @@ section ul{
 	float:left;
 	line-height: 50px;
 }
+/* 图片和文字彻换 #id container 下面 */
+.mian_in_div3{
+	position: relative;
+	width: 670px;
+	height: 450px;
+	background: #eee;
+}
+.mian_in_div3 img{
+	width: 670px;
+	height: 450px;
+	
+}
+.mian_in_div3 .img_next span{
+	position:absolute;
+	color: #006ba1;
+	bottom: 10px;
+	right: 0px;
+	text-align: right;
+	/* 透明度 */
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	font-family: UKIJ Qolyazma;
+	/* 加粗 */
+	font-weight: 400;
+	/* 字体倾斜 */
+	font-style: oblique;
+	padding-right: 5px;
+	/* 字距里 */
+	word-spacing: 5px;
+	
+	/* text-indent: 10px; */
+	text-indent: right;
+}
 .main-div3{
-	margin-right: 10px;
-	border: 2px solid #ff0000;
-	width:533px ;
+	/* margin-right: 10px; */
+	/* border: 2px solid #ff0000; */
+	width:530px ;
 	/* height: 810px; */
 }
 .main-div3 #app{
 	position: relative;
 	background-color: #ffffff;
 	height: 250px;
-	width:533px ;
+	width:530px ;
 	display: block;
 }
 .main-div3 #app img{
 	float: right;
-	width:533px ;
+	width:530px ;
 	height: 250px;
 }
 .main-div3 button{
@@ -151,7 +174,7 @@ section ul{
 	font-size: 50px;
 }
 .main-div3 .sect5 img{
-	width: 533px;
+	width: 530px;
 	height: 95px;
 }
 .main-div3 #app li{
@@ -175,7 +198,7 @@ section ul{
 	height: 50px;
 	background: #00ff00;
 }
-.main-div3 .sect3 p{
+.main-div3 .sect3 p,.sect1-span>P{
 	margin-left: 30px;
 	font-family:UKIJTe;
 	display: inline-block;

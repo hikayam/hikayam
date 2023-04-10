@@ -1,0 +1,177 @@
+<link rel="stylesheet" href="./window/window.css">
+<div>
+	<ul class="" style="font-size: 35px; font-family:ALKATIP Tor; text-align: ;" >
+		<div id="box11" class="cou" style="margin-right: 8px;">چۆچەك</div>
+		<div id="box11">ھىكايە</div>
+		<div id="box11">قىززىق نوقتۇلق</div>
+		<div id="box11">تەسىرلىك</div>
+	</ul>
+	<div style="height: 500px; width: 1250px; text-align: right;">
+		<div class="shan1" style="display: block;">
+			<div id="m-h-mu" class="">
+				<a href="">
+					<div>چۆچەك مەلىكە گۈلجامال ۋە نۇرجامال</div>
+				</a>
+				<a href="">
+					<div>dfsfh</div>
+				</a>
+				<a href="">
+					<div>asdgfg</div>
+				</a>
+				<a href="">
+					<div>dsagfdsa</div>
+				</a>
+				<a href="">
+					<div>dasffsf</div>
+				</a>
+				<a href="">
+					<div>fdsafas</div>
+				</a>
+				<a href="">
+					<div>adsgfasf</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>fdsafas</div>
+				</a>
+				<a href="">
+					<div>adsgfasf</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+			</div>
+		</div>
+		<div class="shan1">
+			<div id="aila">
+				<a href="">
+					<div>ھېكايە چار داستىخان</div>
+				</a>
+				<a href="">
+					<div>adsgfasf</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>fdsafas</div>
+				</a>
+				<a href="">
+					<div>adsgfasf</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>fdsafas</div>
+				</a>
+				<a href="">
+					<div>adsgfasf</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+			</div>
+		</div>
+		<div class="shan1">
+			<div id="kizik-nokta" style="float: right;">
+				<a href="">
+					<div>fdsafas</div>
+				</a>
+				<a href="">
+					<div>adsgfasf</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>fdsafas</div>
+				</a>
+				<a href="">
+					<div>adsgfasf</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+				<a href="">
+					<div>asdfvasd</div>
+				</a>
+			</div>
+			<div class="img_k">
+				<div id="">
+						<div id="sum1">1</div>
+						<img src="./img/ahmah.png" alt="" id="img2">
+						<button id="prev1" onclick="onPrve1()" value="">&gt;</button>
+						<button id="next1" onclick="onNext1()" value="">&lt;</button>
+					
+				</div>
+				<script>
+					var img_k = ['ahmah.png','alma.png','hislat.png','quqak.png','yilla.png','kiz.png'];
+					var imagid1 = document.getElementById('img2');
+					var sumStr1= document.getElementById('sum1')
+					var i= 0;
+					function onPrve1(){
+						i--;
+						if(i<=0)
+						i = img_k.length -1
+						imagid1.src ='/img/'+ img_k[i]
+						sumStr1.innerHTML = (i+1)
+					}
+					function onNext1(){
+						i++;
+						if(i >img_k.length -1){
+							i=0
+						}
+						imagid1.src ='/img/'+ img_k[i]
+						sumStr1.innerHTML = (i+1)
+					}
+					setInterval(function(){
+						onNext1()
+					},5000)
+				</script>
+			</div>
+		</div>
+		<div class="shan1">
+			
+		</div>
+	</div>
+</div>
+<script>
+	var li = document.getElementById('box11')
+	var nht = document.getElementsByClassName('shan1')
+	for (var i= 0;i<box11.length;i++){
+		box11[i].setAttribute('indexkey',i)
+		box11[i].onmouseover = function(){
+			var index = this.getAttribute('indexkey')
+			for (var j= 0; j<box11.length;j++){
+				box11[j].className= 'new'
+			}
+			this.className = 'cou'
+			for(var y = 0;y<nht.length;y++){
+				nht[y].style.display = 'none'
+				
+			}
+			nht[index].style.display = 'block'
+		}
+	}
+</script>

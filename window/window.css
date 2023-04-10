@@ -1,31 +1,67 @@
-#left-1,#right-1{
-	/* background: #333; */
-	position: relative;
-	width: 300px;
-	height: 1100px;
-	/* border-radius: 20px; */
-	border: 2px solid #333;
-	
+#win{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: antiquewhite;
 }
-
-#xinwen{
-	font-family: Es T;
+.shan1{
+	font-family: ALKATIP Basma Tom;
+	display: none;
+}
+.huan{
+	display: none;
+}
+.new{
+	font-size: 25px;
+	color: red;
+}
+#box11{
+	border-radius: 10px;
+	border-color: #3022ff;
+	border-bottom: 9px #ffff00 groove ;
+	border-right: 9px #00ff00 groove ;
+	border-left: 9px #88cccc groove ;
+	border-top: 9px #fff groove ;
+	margin-top: 5px;
+	margin-left: 9px;
+	/* border-radius: 30px; */
+	background-color: chartreuse;
+	line-height: 70px;
+	text-align: center;
+	float: right;
+	width: 270px;
+	background: #006ba1;
+	color: #fff;
+}
+#m-h-mu,#quqak,#aila{
+	width: 1200px;
+}
+#m-h-mu a div  ,#quqak a,#aila a{
+	box-sizing: border-box;
+	float: right;
+	width: 32.5%;
+	line-height: 50px;
+	border: 2px #ffaa00 outset;
+	margin-top: 5px;
+	padding-right: 4px;
+	margin: 5px;
+}
+#asar a div{
+	height: 40px;
+	padding-right:10px ;
+	border: 2px #1c1cff dotted ;
+	line-height: 40px;
+	width: 560px;
+	margin: 5px 10px;
+}
+#img_k img{
+	box-shadow: 5px 5px 10px #000000;
+	margin: 0 10px;
+	width:48%;
+	height: 400px;
+	float: left;
+}
+.shan1 a:hover{
+	text-decoration:;
 	font-size: 30px;
-	width: 50px;
-	height: 50px;
-	/* background: #fff; */
-	color: black;
-	position: fixed;
-	 top: 30%;
-	display: block;
-	right: 95%;
-}
-.win-left{
-	position: relative;
-}
-#window img{
-	position: absolute;
-	top: 30%;
-	right: 3px;
-	
+	background: #ffffff;
 }

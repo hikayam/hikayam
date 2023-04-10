@@ -1,59 +1,61 @@
 footer{
 	font-family:ALKATIP Kitab Tom;
 	display: block;
-	height: 450px;
+	height: 100%;
 	background: linear-gradient(to top,#006ba1,#007bb9);
 }
 footer .footer-div{
+	background: linear-gradient(to top,#006ba1,#007bb9);
 	display: block;
 	width: 1200px;
 	margin: 0 auto;
+	height:100%;
 }
 .footer-div1 ul{
 	display:block;
-	padding-top: 30px;
+	margin: 20px;
 	color: #ffffff;
 	font-family:UKIJ3D;
 	font-size: 30px;
 	line-height: 50px;
 	text-align: center;
-	width: 200px;
+	
 }
 .footer-div1{
+	width: 30%;
 	display: inline-block;
 }
 footer>div>div img{
-	width: 200px;
+	/* margin-right:20px; */
+	width:100%;
 }
 .footer-div2{
 	margin: 30px;
-	float: right;
-	width: 150px;
+	/* float: right; */
+	width: 20%;
 	display: block;
 }
 .footer-div2 p{
+	text-align: right;
 	display: block;
 	font-family:Es T ;
 	line-height: 30px;
 }
 
 .footer-div3{
-	position: relative;
 	text-align: center;
-	width: 700px;
+	width:40%;
 }
-.footer-div3>img{
-	
-	width: 500px;
-	height: 400px;
-}
+/* .footer-div3>img{
+	width:80%;
+	height: 80%;
+} */
 .footer-div3 p{
+	margin:100px 50px;
 	font-size: 25px;
 	color: #fff;
-	right: 45%;
-	top: 80%;
-	position: absolute;
 }
 ul{
 	list-style-type: none;
 }
+

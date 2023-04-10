@@ -15,7 +15,7 @@ input1.onblur = function() {
 	}
 }
 // 图片切换
-var imagerr = ['1.jpg','2.jpg','6.jpg','3.jpg','4.jpg','5.jpg'];
+var imagerr = ['ahmah.png','alma.png','hislat.png','quqak.png','yilla.png','kiz.png'];
 var imagid = document.getElementById('img1');
 var sumStr= document.getElementById('sum')
 var i= 0;

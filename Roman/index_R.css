@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.pull-left{
+	float: left;
+	
+}
+.pull-right{
+	float: right;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+main{
+	overflow: hidden;
+	font-family: ALKATIP Basma Tom;
+	border: 2px solid #000000;
+	margin: 0 auto;
+	width: 1200px;
+}
+.div_top{
+	background: #006ba1;
+	width: 100%;
+	height: 50px;
+}
+.div_top> .sect1{
+	margin-right: 30px;
+	line-height: 50px;
+}
+.div_top>div{
+	height: 50px;
+}
+.div_top>section>a:hover{
+	color: #fff;
+	/* font-size: 20px; */
+	border-bottom: 1px solid #fff;
+}
+.main_in{
+	width: 100%;
+	background-color: aliceblue;
+}
+.main_in div{
+	position: relative;
+	text-align: center;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	float: right;
+	height: 300px;
+	width: 33.3333333%;
+	/* background: #4793f0; */
+}
+.main_in>div img{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.main_in>div section{
+	width: 100%;
+	bottom: 0%;
+	right: 0%;
+	position: absolute;
+	height: 45px;
+	background: rgba( 0,0,0, 0.4);
+	/* background:  #005f8f; */
+}
+.main_in div section p{
+	display: inline-block;
+	overflow: hidden;
+	/* width:390px ; */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #fff;
+	float: right;
+	line-height: 45px;
+}
+.main_in div a img{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.main_in div a img:hover{
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
