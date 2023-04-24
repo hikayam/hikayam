@@ -42,11 +42,12 @@ main #container{
 	width: 400px;
 }
 .main-div1 .sect2>ul li a{
+	direction: rtl;
 	line-height: 45px;
 	font-size: 20px;
 	font-family: UKIJ Qolyazma;
 	display: inline-block;
-	width: 370px;
+	width: 360px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -57,7 +58,7 @@ main #container{
 	transition: margin-left 0.1s;
 }
 #container .main-div1 .sect2 ul a:hover{
-	margin-left: 10px;
+	margin-right: 20px;
 }
 .main-div1, .main-div2{
 	height: 450px;
@@ -81,14 +82,17 @@ main #container{
 	border-radius: 150px;
 }
 .main-div2 .sect2>ul li a{
+	direction: rtl;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow:ellipsis;
 	vertical-align: top;
-	width: 240px;
-	/* width: 480px; */
+	width: 250px;
 	line-height: 40px;
 	display: inline-block;
+}
+.main-div2 .sect2>ul li a:hover{
+	font-size: 25px;
 }
 .main-div2 .sect2{
 	font-family: UKIJ TuT;
@@ -194,6 +198,10 @@ main #container{
 	bottom: 0%;
 	position: absolute;
 }
+.main-div3 #app>img{
+	width: 100%;
+	display: block;
+}
 .main-div3 .sect3{
 	height: 50px;
 	background: #00ff00;
@@ -208,9 +216,11 @@ main #container{
 .main-div3 .sect3 span{
 	line-height: 50px;
 }
+.main-div3 .sect5>img{
+	display: block;
+}
 .main-div4{
 	width: 800px;
 	height: 500px;
-	ba
 }
 

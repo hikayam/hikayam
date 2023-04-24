@@ -35,7 +35,7 @@
 #m-h-mu,#quqak,#aila{
 	width: 1200px;
 }
-#m-h-mu a div  ,#quqak a,#aila a{
+#m-h-mu a ,#quqak a,#aila a{
 	box-sizing: border-box;
 	float: right;
 	width: 32.5%;
@@ -44,6 +44,17 @@
 	margin-top: 5px;
 	padding-right: 4px;
 	margin: 5px;
+	
+	
+}
+#m-h-mu a div,#quqak a div,#aila a div{
+	direction: rtl;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	width: 380px;
 }
 #asar a div{
 	height: 40px;
@@ -61,7 +72,6 @@
 	float: left;
 }
 .shan1 a:hover{
-	text-decoration:;
 	font-size: 30px;
 	background: #ffffff;
 }

@@ -1,0 +1,40 @@
+.box{
+	position: relative;
+}
+.shan1{
+	padding:20px 10px 10px 310px ;
+	/* padding-left: 310px; */
+	font-family: ALKATIP Kitab Tom;
+	text-align: center;
+	/* margin-left: 320px; */
+	width: 880px;
+	/* height: 1000px; */
+	/* border: 2px dashed red; */
+	/* overflow: auto; */
+	overflow: none;
+}
+#show>img{
+	width: 50px;
+}
+#show{
+	right: 30px;
+	top: 600px;
+	position: absolute;
+	/* width: 50px; */
+	/* height: 30px; */
+	display: none;
+}
+
+.var-div1 ul{
+	font-size: 15px;
+	font-family: ALKATIP Kitab Tom;
+}
+.shan p{
+	padding-right: 5px;
+}
+.shan h4{
+	text-align: center;
+}
+.in-header>p>a:nth-child(2):hover{
+	color: #fff;
+}

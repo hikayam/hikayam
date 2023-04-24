@@ -1,0 +1,95 @@
+header{
+	margin: 0 auto;
+	height: 300px;
+	background: linear-gradient(to top,#006ba1,#006ba1);
+}
+#header{
+	
+	position: relative;
+	width: 1204px;
+	margin: 0 auto;
+	height: 300px;
+	background: linear-gradient(to top,#006ba1,#006ba1);
+}
+#header img{
+	margin: 25px;
+	width: 250px;
+}
+#header div{
+	font-family: UKIJ3D;
+	font-size: 50px;
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+}
+#header div p:last-child{
+	color: #fff;
+	font-family: 华文彩云;
+}
+footer{
+	position: absolute;
+	font-family:ALKATIP Kitab Tom;
+	display: block;
+	width: 100%;
+	/* width: 1204px; */
+	margin: 0 auto;
+	height:50% ;
+	background: linear-gradient(to top,#006ba1,#007bb9);
+}
+footer .footer-div{
+	height: 100%;
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	background: linear-gradient(to top,#006ba1,#007bb9);
+}
+.footer-div1 ul{
+	display:block;
+	padding-top: 30px;
+	color: #ffffff;
+	font-family:UKIJ3D;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	width: 200px;
+}
+.footer-div1{
+	display: inline-block;
+}
+footer>div>div img{
+	width: 200px;
+}
+.footer-div2{
+	margin: 80px 80px 0;
+	float: right;
+	width: 200px;
+	display: block;
+}
+.footer-div2 p{
+	text-align: right;
+	display: block;
+	font-family:Es T ;
+	line-height: 30px;
+}
+
+.footer-div3{
+	position: relative;
+	text-align: center;
+	width: 600px;
+}
+/* .footer-div3>img{
+	height: 300px;
+	width: 500px;
+} */
+.footer-div3 p{
+	right: 180px;
+	top: 100px;
+	float: right;
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+}
+ul{
+	list-style-type: none;
+}
+
