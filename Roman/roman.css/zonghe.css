@@ -15,6 +15,9 @@ a{
 .pull-right{
 	float: right;
 }
+.direction{
+	direction: rtl;
+}
 main{
 	overflow: hidden;
 	font-family: ALKATIP Basma Tom;

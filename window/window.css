@@ -1,10 +1,12 @@
 #win{
+	/* font-family: UKIJ Qolyazma */
 	width: 1200px;
 	margin: 0 auto;
 	background-color: antiquewhite;
 }
 .shan1{
-	font-family: ALKATIP Basma Tom;
+	font-family: Es T;
+	/* font-family: ALKATIP Basma Tom; */
 	display: none;
 }
 .huan{
@@ -15,6 +17,7 @@
 	color: red;
 }
 #box11{
+	font-family: Es T;
 	border-radius: 10px;
 	border-color: #3022ff;
 	border-bottom: 9px #ffff00 groove ;

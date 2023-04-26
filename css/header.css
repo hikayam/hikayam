@@ -1,12 +1,8 @@
-header{
-	/* background:linear-gradient(to top,#fff,#006ba1,#006ba1); */
-	background: url(../img/beijingtu2.png) ;
-	/* background-size: 100% 100%; */
-}
+
 #header{
 	/* background:linear-gradient(to top,#fff,#006ba1,#006ba1); */
 	/* background: url(../img/beijingtu6.png) no-repeat; */
-	background-size:100% ;
+	/* background-size:100% ; */
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
