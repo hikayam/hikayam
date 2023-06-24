@@ -40,7 +40,7 @@ main{
 	/* text-align: right; */
 	font-size: 25px;
 	font-family: ALKATIP Basma Tom;
-	float: right;
+	/* float: right; */
 }
 #centant section a:hover{
 	color: #fff;
@@ -59,6 +59,5 @@ main{
 #centant div p{
 	padding: 10px;
 	text-align: right;
-	line-height: 40px;
 }
 

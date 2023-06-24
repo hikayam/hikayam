@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../makal-tamsil/header000.css">
 		<link rel="stylesheet" href="../css/foter.css">
 		<link rel="stylesheet" href="../ziti.css">
+		<script src="../jquery.js"></script>
 	</head>
 	<body>
 		<header>
@@ -29,10 +30,11 @@
 						<a href="../index.html"><p><span>&lt;</span>باش بەت</p></a>
 						<a href="queqak1.html" style=";"><p><span>&lt;</span>چۆچەك </p></a>
 						<a href=""><p>ياغاچچى بىلەن بوياقچى</p></a>
+						<p class="pull-left aaa"><span class="da" style="font-size: 30px; padding: 10px;">A+</span><span class="xiao" style="font-size: 30px; padding: 10px;">A-</span></p>
 					</section>
 					
 				</header>
-				<div>
+				<div id="div-main">
 					<h3>ياغاچچى بىلەن بوياقچى</h3>
 					<p>
 						بار ئىكەن، يوق ئىكەن، بۇرۇنقى زاماندا بىر پادىشاھنىڭ بىر ياغاچچىسى بىلەن بىر بوياقچىسى بار ئىكەن. بۇ ئىككى ئ‍ۇستا پادىشاھنىڭ پۈتۈن ئوردا - سارايلىرىنى ياساپ زىننەتلەيدىكەن.
@@ -93,6 +95,27 @@
 			document.onselectstart = function(){
 				return false
 			}
+			$(function () {
+				var originalFontSize = $("#div-main>p").css("font-size");
+				$("#div-main>p").click(function () {
+				$("#div-main>p").css("font-size", originalFontSize);
+				return false;
+				});
+				$(".da").click(function () {
+				var currentFontSize = $("#div-main>p").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 1.1;
+				$("#div-main>p").css("font-size", newFontSize);
+				return false;
+				});
+				$(".xiao").click(function () {
+				var currentFontSize = $("#div-main>p").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 0.9;
+				$("#div-main>p").css("font-size", newFontSize);
+				return false;
+				});
+			});
 		</script>
 	</body>
 </html>

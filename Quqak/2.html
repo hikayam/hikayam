@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../makal-tamsil/header000.css">
 		<link rel="stylesheet" href="../css/foter.css">
 		<link rel="stylesheet" href="../ziti.css">
+		<script src="../jquery.js"></script>
 	</head>
 	<body>
 		<header>
@@ -29,10 +30,11 @@
 						<a href="../index.html"><p><span>&lt;</span>باش بەت</p></a>
 						<a href="queqak1.html" style=";"><p><span>&lt;</span>چۆچەك </p></a>
 						<a href=""><p>چىن تۆمۈر باتۇر</p></a>
+						<p class="pull-left aaa"><span class="da" style="font-size: 30px; padding: 10px;">A+</span><span class="xiao" style="font-size: 30px; padding: 10px;">A-</span></p>
 					</section>
 					
 				</header>
-				<div>
+				<div id="div-main">
 					<h3>چىن تۆمۈر باتۇر</h3>
 					<p>
 						قەدىمكى زاماندا ھاۋاسى يېقىشلىق، باغباراڭلىرى چىرايلىق، يايلاقلىرى پاياندازدەك كۆرۈملۈك بىر يۇرتتا چوڭ بىر پادىشاھ ئۆتكەنىكەن. ئۇ پادىشاھنىڭ ئىككى خوتۇنى بولسىمۇ، ئەمما پەرزەنت يۈزى كۆرمىگەنىكەن، شۇڭا ئۇنىڭ كۆڭلى بىئارام ئىكەن. ئۇ خاپىلىقىنى بېسىش مەقسىتىدە ھەر دائىم شىكارغا چىقىپ تاماشا قىلىشنى ياخشى كۆرىدىكەن. ئاي - كۈنلەر ئۆتۈپ، پادىشاھنىڭ كىچىك خوتۇنى ھامىلىدار بوپتۇ. بۇنى ئاڭلىغان پادىشاھ شىكارغا تېخىمۇ ئامراق بولۇپ كېتىپتۇ. بىر كۈنى پادىشاھ ۋەزىرلىرى بىلەن شىكارغا چىقىپ كەتكەندە، كىچىك خوتۇنى بىر ئوغۇل تۇغۇپتۇ. بىراق، پادىشاھنىڭ چوڭ خوتۇنى ئىچى تارلىق قىلىپ، بالىنى كۆلگە تاشلىۋېتىپ، ئورنىغا ئىتنىڭ كۈچۈكىنى ئەكېلىپ قويۇپتۇ. پادىشاھ شىكاردىن يېنىپ كەلگەندە، چوڭ خوتۇنى ئالدىغا چىقىپ:
@@ -216,6 +218,27 @@
 			document.onselectstart = function(){
 				return false
 			}
+			$(function () {
+				var originalFontSize = $("#div-main>p").css("font-size");
+				$("#div-main>p").click(function () {
+				$("#div-main>p").css("font-size", originalFontSize);
+				return false;
+				});
+				$(".da").click(function () {
+				var currentFontSize = $("#div-main>p").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 1.1;
+				$("#div-main>p").css("font-size", newFontSize);
+				return false;
+				});
+				$(".xiao").click(function () {
+				var currentFontSize = $("#div-main>p").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 0.9;
+				$("#div-main>p").css("font-size", newFontSize);
+				return false;
+				});
+			});
 		</script>
 	</body>
 </html>

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../makal-tamsil/header000.css">
 		<link rel="stylesheet" href="../css/foter.css">
 		<link rel="stylesheet" href="../ziti.css">
+		<script src="../jquery.js"></script>
 	</head>
 	<body>
 		<header>
@@ -25,16 +26,19 @@
 			<div>
 				<header class="">
 					<section >
+						
 						<p class="pull-right" style="margin-right: 50px;">: ھازىرقى ئورنىڭز</p>
 						<a href="../index.html"><p><span>&lt;</span>باش بەت</p></a>
 						<a href="queqak1.html" style=";"><p><span>&lt;</span>چۆچەك </p></a>
 						<a href=""><p>پادىشاھنىڭ ۋەلىي ئەھتى تەيىللىشى</p></a>
+						<p class="pull-left aaa"><span class="da" style="font-size: 30px; padding: 10px;">A+</span><span class="xiao" style="font-size: 30px; padding: 10px;">A-</span></p>
+						
 					</section>
 					
 				</header>
 				<div>
 					<h3>پادىشاھنىڭ ۋەلىي ئەھتى تەيىللىشى</h3>
-					<p>
+					<p id="bottom_centant_">
 						بۇرۇنقى زاماندا راسچىنلىقى ۋە ئەخلاقى بىلەن  سەلتەنەت سۈرگەن بىر ئۇلۇغ پادىشاھ بولغان ئىكەن كۈنلەر ئۆتۈپ يىللار ئۆتۈپ ئۇ شاھنىڭ ياشلىق باھىرى كېتىپ ياشىنىپ قاپتۇ دە ئۆزىنىڭ ئورنىغا بىر تەخىت ۋارىسى تەيىنلەپ ئەلنىڭ غېمىنى يەيدىغان ياخشى بىر پاراسەتلىك سەمىيمى ۋەلىي ئەھتى تەيىللەش ئارزۇسى بۇلۇپ  توقاللىرىدىن بولغان ئون نەچچە پەرزەنتىنىڭ قايسىنى ۋەلى ئەھتى قىلىش ئىشى شاھنىڭ بېشىنى قاتتۇرۇپتۇ
 						
 						بىر كۈنى پادىشاھ ئامال تېپىپ بارلىق توقاللىرىدىن بولغان پەرزەنتىللىرىنى ئوردىغا يىغىپ شۇنداق دەپتۇ باللىرىم مەن ياشىنىپ قالدىم ئورنۇمغا بىرىڭلار ۋارىسلىق قىلىپ ئەل غېمىنى يېيىشىڭلا كېرەك ئەمىلىيەتتە سىلەر ھەممىڭلار بوللالايسىلەر لىكىن ئارىڭلاردىن پەقەت بىرىڭلالا ۋەلىي ئەھتى بولمىساڭلا بولمايدۇ  ، مەن بىر ئامال ئويلۇدۇم سىلەرگە گۈلنىڭ ئۇرىقىنى بىرەي سىلەر ئېلىپ كېتىپ گۈل ئۇرقىنى تېرىپ پەرۋىش قىلىڭلار قايسىڭلا ئۇرۇقنى تېرىپ  چوڭ چىرايلىق خۇش پۇراق گۈلگە ئايلاندۇرالىساڭلا شۇ تەخىت ۋارىسى بولسۇن دەپتۇ 
@@ -87,6 +91,28 @@
 			document.onselectstart = function(){
 				return false
 			}
+			
+			$(function () {
+				var originalFontSize = $("#bottom_centant_").css("font-size");
+				$("#bottom_centant_").click(function () {
+				$("#bottom_centant_").css("font-size", originalFontSize);
+				return false;
+				});
+				$(".da").click(function () {
+				var currentFontSize = $("#bottom_centant_").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 1.1;
+				$("#bottom_centant_").css("font-size", newFontSize);
+				return false;
+				});
+				$(".xiao").click(function () {
+				var currentFontSize = $("#bottom_centant_").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 0.9;
+				$("#bottom_centant_").css("font-size", newFontSize);
+				return false;
+				});
+			});
 		</script>
 	</body>
 </html>

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../makal-tamsil/header000.css">
 		<link rel="stylesheet" href="../css/foter.css">
 		<link rel="stylesheet" href="../ziti.css">
+		<script src="../jquery.js"></script>
 	</head>
 	<body>
 		<header>
@@ -29,10 +30,18 @@
 						<a href="../index.html"><p><span>&lt;</span>باش بەت</p></a>
 						<a href="queqak1.html" style=";"><p><span>&lt;</span>چۆچەك </p></a>
 						<a href=""><p>چىڭتۇ بىلەن بەكتۇ</p></a>
+						<p class="pull-left aaa">
+							<span class="da" style="font-size: 30px; padding: 10px;">
+								<svg t="1684977938968" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2255" width="32" height="32"><path d="M405.33996 938.666667a21.333333 21.333333 0 0 1-20.16-14.36L331.073293 768H95.606627l-54.106667 156.313333a21.333333 21.333333 0 0 1-40.32-13.96l192-554.666666a21.333333 21.333333 0 0 1 40.32 0l192 554.666666A21.333333 21.333333 0 0 1 405.33996 938.666667z m-294.96-213.333334h205.92L213.33996 427.886667zM1002.673293 938.666667a21.333333 21.333333 0 0 1-20.333333-14.913334L906.193293 682.666667H587.153293l-76.14 241.093333a21.333333 21.333333 0 1 1-40.666666-12.853333l256-810.666667a21.333333 21.333333 0 0 1 40.666666 0l256 810.666667A21.333333 21.333333 0 0 1 1002.673293 938.666667zM600.626627 640h292.093333L746.673293 177.513333z" fill="#000000" p-id="2256"></path></svg>
+							</span>
+							<span class="xiao" style="font-size: 30px; padding: 10px;">
+								<svg t="1684977973049" class="icon" viewBox="0 0 1152 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="32" height="32"><path d="M64 1024H0L352 0h64L64 1024z" fill="#000000" p-id="2455"></path><path d="M416 0h-64L704 1024h64L416 0z" fill="#040404" p-id="2456"></path><path d="M128 704h512v64H128zM768 1024h-64l192-512h64l-192 512z" fill="#000000" p-id="2457"></path><path d="M960 512h-64l192 512h64l-192-512z" fill="#000000" p-id="2458"></path><path d="M1088 896h-320l64-64h192l64 64z" fill="#040404" p-id="2459"></path></svg>
+							</span>
+						</p>
 					</section>
-					
 				</header>
-				<div>
+				
+				<div id="div-main">
 					<h3>چىڭتۇ بىلەن بەكتۇ</h3>
 					<p>
 						بۇرۇنقى زاماندا كۈچتۈڭگۈرلەر ياشايدىغان نۇرغۇن شەھەرلەر بولغان ئىكەن، بۇ شەھەرلەر ھەرخىل مىجەزلىك، ياڭزىمۇ-ياڭزا ھۈنەرلىك كىشىلەر بىلەن تولغان ئىكەن. شۇنداق كىشىلەرنىڭ بىرسى «چىڭتۇ» لەقەملىك مامۇت ئوغرى، يەنە بىرى «بەكتۇ» لەقەملىك داۋۇت ئوغرى ئىكەن. مامۇت ئوغرى دېگىنى تۈمەن دەرياسى بىلەن قىزىل دەرياسىنىڭ ئارىسىدا، ھىمىت سىيىتنىڭ نېرىسىدا ياشىسا، داۋۇت ئوغرى دېگىنى يۇرۇڭقاش دەرياسى بىلەن قاراقاش دەرياسىنىڭ ياقىسىدا، پىيالما چۆلىنىڭ ئارقىسىدا تىرىكچىلىك قىلىدىكەن. ئۇلار ھىيلە-ھەييارلىقتا باش كۆتۈرگەن، بىرسى قاپاق پۇچۇقىدا ئاش كۆتۈرسە، يەنە بىرسى چىمچىلىقىدا تاش كۆتۈرگەن نوچىلار ئىكەن.
@@ -128,6 +137,28 @@
 			document.onselectstart = function(){
 				return false
 			}
+			$(function () {
+				var originalFontSize = $("#div-main>p").css("font-size");
+				$("#div-main>p").click(function () {
+				$("#div-main>p").css("font-size", originalFontSize);
+				return false;
+				});
+				$(".da").click(function () {
+				var currentFontSize = $("#div-main>p").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 1.1;
+				$("#div-main>p").css("font-size", newFontSize);
+				return false;
+				});
+				$(".xiao").click(function () {
+				var currentFontSize = $("#div-main>p").css("font-size");
+				var currentFontSizeNumber = parseFloat(currentFontSize);
+				var newFontSize = currentFontSizeNumber * 0.9;
+				$("#div-main>p").css("font-size", newFontSize);
+				return false;
+				});
+				
+			});
 		</script>
 	</body>
 </html>

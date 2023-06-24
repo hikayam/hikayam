@@ -5,6 +5,7 @@ nav{
 	background: #006ba1;
 }
 #var-div{
+	
 	background: #006ba1;
 	margin: 0 auto;
 	padding: 0;
@@ -38,25 +39,50 @@ nav{
 	background: #ffffff;
 	
 }
+/* 定位 */
 #var-div .li-xala{
 	margin-top: 38px;
 	right:0;
 	position: absolute;
 }
-#box1:hover span>p{
+#var-div .li-xier{
+	position: absolute;
+	right: 171.39px;
+	margin-top: 38px;
+	
+}
+#var-div .makal_tamsil{
+	position: absolute;
+	right: 514.17px;
+	margin-top: 38px;
+}
+#a-hover:hover span>p{
 	display: block;
 	background: #006ba1;
+	opacity: 0.9;
 }
-#box1:hover span>p:nth-child(3){
+/* #box1:hover span>p>a,#a-hover:hover span>p>a{
+	opacity: 1;
+} */
+#a-hover:hover span>p:last-child{
 	border-radius: 0 0 10px 10px;
 }
-#var-div p{
+/* 首页的hover */
+#a-hover p{
 	display: none;
 	width: 171.4px;
-	background-color: antiquewhite;
+	background: antiquewhite;
 }
-#var-div span>p:hover{
+#var-div span>p>a{
+	color: #ffffff;
+}
+#var-div span>p:hover a,#a-hover span p:hover  a{
+	color: black;
+}
+#var-div span>p:hover,#a-hover:hover{
 	background: #ffffff;
+	color: black;
+	opacity: 1;
 }
 .nav-img{
 	margin: 0 auto;

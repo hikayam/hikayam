@@ -25,6 +25,7 @@ $(function () {
     // }, function (e) {
     //     $(this).children("div").remove();
     // });
+	// 返回顶部
     $(window).scroll(function () {
         var scrollTop = $(document).scrollTop();
         if (scrollTop >= 200) {
@@ -40,3 +41,26 @@ $(function () {
         }, 700);
     })
 })
+// 字体大小设置
+$(function () {
+	var originalFontSize = $("#centant>div>p").css("font-size");
+	$("#centant>div>p").click(function () {
+	$("#centant>div>p").css("font-size", originalFontSize);
+	return false;
+	});
+	$(".da").click(function () {
+	var currentFontSize = $("#centant>div>p").css("font-size");
+	var currentFontSizeNumber = parseFloat(currentFontSize);
+	var newFontSize = currentFontSizeNumber * 1.1;
+	$("#centant>div>p").css("font-size", newFontSize);
+	return false;
+	});
+	$(".xiao").click(function () {
+	var currentFontSize = $("#centant>div>p").css("font-size");
+	var currentFontSizeNumber = parseFloat(currentFontSize);
+	var newFontSize = currentFontSizeNumber * 0.9;
+	$("#centant>div>p").css("font-size", newFontSize);
+	return false;
+	});
+	
+});

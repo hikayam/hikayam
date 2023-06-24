@@ -68,12 +68,13 @@ main #container{
 	width:270px ;
 }
 .main-div2 .sect1-span{
+	height: 50px;
 	background:#006ba1;
 	color:#fff;
 }
 .main-div2 .sect1-span p{
-	display: inline-block;
-	font-size:35px;
+	/* display: inline-block; */
+	/* font-size:35px; */
 /* 	margin-left: 25%; */
 }
 .main-div1 .sect1-span figure img{
@@ -206,11 +207,20 @@ main #container{
 	height: 50px;
 	background: #00ff00;
 }
-.main-div3 .sect3 p,.sect1-span>P{
-	margin-left: 30px;
+.main-div3 .sect3 p{
+	float: right;
+	margin-right: 10px;
 	font-family:UKIJTe;
 	display: inline-block;
-	font-size:25px;
+	font-size:20px;
+	line-height: 50px;
+}
+.sect1-span>P{
+	float: right;
+	margin-right: 10px;
+	font-family:UKIJTe;
+	display: inline-block;
+	font-size:20px;
 	line-height: 50px;
 }
 .main-div3 .sect3 span{
